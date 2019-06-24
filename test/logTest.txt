@@ -1,0 +1,11 @@
+. test/test_object.py::TestClass::test_one
+F test/test_object.py::TestClass::test_two
+ self = <test.test_object.TestClass object at 0x10f4a93c8>
+ 
+     def test_two(self):
+         x = {"check": "heck"}
+ >       assert hasattr(x, 'check')
+ E       AssertionError: assert False
+ E        +  where False = hasattr({'check': 'heck'}, 'check')
+ 
+ test/test_object.py:16: AssertionError
